@@ -1,0 +1,233 @@
+/************************************************************************ formatações gerais */
+body {
+	font-family: arial, sans-serif, monospace; 
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+
+* { 
+	box-sizing: border-box;
+} 
+
+header, footer, aside, main {
+	padding: 10px;
+}
+
+/************************************************************************ cores de fundo / fontes */
+header, footer {
+	background-color: #AA3C39;
+	color: mintcream;
+}
+
+nav {
+	background-color: orange;
+}
+
+aside {
+	background-color: #378970;
+    color: white;
+}
+
+h1 {
+	color: #e0d498;
+}
+
+h2 {
+	color: #267356;
+}
+
+hr {
+    color: #D79D4F;
+} 
+
+header p {
+	color: mintcream;
+	font-weight: bold;
+	font-style: italic;
+	font-family: serif;
+	text-transform: capitalize;
+	text-indent: 30px;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	direction: ltr; /* left to right */ 
+} 
+
+main p {
+	line-height: 1.5; 
+	text-align: justify;
+} 
+
+/*********************************************************************** links */
+
+a {
+	text-decoration: none;
+}
+
+a:link{
+	/* nao visitado */
+	color: #574400;
+}
+
+a:visited{
+	color: #267356;
+}
+
+a:active{
+	color: lightblue;
+}
+
+header #menu_topo a{
+	color: white;		
+}
+
+nav a {
+	text-shadow: 3px 3px 5px white; /* sombra horizontal, sombra vertical, espalhamento, cor */
+}
+
+nav a:hover{
+	color:#AA3C39;
+}
+
+/*********************************************************************** menu principal */
+nav ul{
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 14px 16px;
+}
+
+nav ul li:hover {
+	background-color: mintcream;
+}
+
+/************************************************************************ menu topo */
+/* #menu_topo{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+} */
+
+/********************************************************************** tabela */
+table, td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+    padding: 10px;
+}
+
+th{
+	background-color: #AC653B;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #FFEEAF;
+}
+
+tr:nth-child(odd){
+	background-color: #CCC;
+}
+
+/****************************************************************** formulários */
+
+input, select, textarea {
+	background-color:mintcream;
+	padding: 5px;
+	border: 2px solid #267356;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+	background-color: #FFEEAF;
+}
+
+input[type=submit], input[type=reset]{
+	background-color: #267356;
+	padding: 5px 10px; /* topo, direita, embaixo, esquerda */
+	border: 0;
+	color: mintcream;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+	background-color: #e0d498;
+	border: 0;
+	color: #267356;
+}
+
+
+/****************************************************** imagem da home */
+#imgInicio {
+	width: 50%;
+	max-width: 400px;
+} 
+
+#inicio, #inicio p {
+	text-align: center;
+} 
+
+/****************************************************** imagem quem somos */
+
+#heart{
+	float: left;
+} 
+
+.clear{
+	clear: left;  
+} 
+
+/******************************************************* footer  */
+
+footer ul li {
+	display: inline;
+}
+
+footer ul{
+	padding: 0;
+	margin: 0;
+}
+
+footer{ /* voltaremos aqui adiante */
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* #duvidas{
+	color: black;
+	background-color: lightyellow;
+	border: 1px solid gray;
+	width: 300px;
+	height: 150px;
+	position: fixed;
+	bottom: 0;
+	right: 50px;	
+} */
+
+/******************************************************* layout com float */
+
+main {
+	width: 80%;
+} 
+
+aside{
+	width: 20%;
+	height: 400px;
+	margin-top: 20px; 
+} 
+
+main, aside{
+	float: left;
+} 
+
+footer{
+	clear: left;
+} 
+
+
+
+
