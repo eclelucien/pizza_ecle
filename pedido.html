@@ -12,57 +12,202 @@
 
 <body>
     <div class="container">
-    <header>
-        <h1>Pizza Byte</h1>
-        <p>Love at first byte</p>
-        <div id="menu_topo">
-            Olá, visitante! (<a href='#'>entrar</a>)
-            &nbsp;&nbsp;
-            <a href="#">meu carrinho</a>
+        <header>
+            <h1>Pizza Byte</h1>
+            <p>Love at first byte</p>
+            <div id="menu_topo">
+                Olá, visitante! (<a href='#'>entrar</a>)
+                &nbsp;&nbsp;
+                <a href="#">meu carrinho</a>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsomos.html">Quem somos</a></li>
+                <li><a href="precos.html">Preços</a></li>
+                <li><a href="pedido.html">Faça seu pedido</a></li>
+                <li><a href="cliente.html">Área do cliente</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- conteúdo específico -->
+            <h2>Faça seu pedido</h2>
+            <hr>
+            <form>
+                <label for="tamanho">Selecione o tamanho da pizza:</label>
+                <select name="tamanho" id="tamanho">
+                    <option value="">---- Selecione ----</option>
+                    <option value="b">Broto</option>
+                    <option value="p">Pequena</option>
+                    <option value="m">Média</option>
+                    <option value="g">Grande</option>
+                    <option value="gg">Gigante</option>
+                </select>
+                <br>
+                <br>
+                <div id="opcoes_pedido">
+                    <p>Você selecionou <strong id="numSabores">0</strong> de <strong id="limiteSabores">0</strong>
+                        sabores</p>
+                    <div id="cardapio">
+                        <!-- container -->
+                        <div class="sabor">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/calabresa.jpg" alt="calabresa">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Calabresa</strong>
+                                    Molho, calabresa e mussarela
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="sabor">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/alho.jpg" alt="alho e óleo">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Alho e Óleo</strong>
+                                    Molho, alho, óleo e mussarela
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="sabor">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/atum.jpg" alt="atum">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Atum</strong>
+                                    Molho, Atum, cebola e mussarela
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="sabor selecionado">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/marguerita.jpg" alt="marguerita">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Marguerita</strong>
+                                    Molho, mussarela, manjericão, tomate
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="sabor selecionado">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/milho.jpg" alt="milho">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Milho</strong>
+                                    Molho, milho e mussarela
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="sabor">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/vegetariana.jpg" alt="vegetariana">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Vegetariana</strong>
+                                    Molho, rúcula, tomate seco e mussarela
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="sabor">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/mussarela.jpg" alt="mussarela">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Mussarela</strong>
+                                    Molho, mussarela e orégano
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="sabor">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/strogonoff.jpg" alt="strogonoff">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Strogonoff</strong>
+                                    Molho, strogonoff e batata palha
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="sabor selecionado">
+                            <label>
+                                <input type="checkbox" name="sabores[]" value="">
+                                <div class="sabor_img">
+                                    <img src="assets/images/frango.jpg" alt="frango">
+                                </div>
+                                <div class="sabor_descricao">
+                                    <strong>Frango</strong>
+                                    Molho, frango, catupiry e mussarela
+                                </div>
+                            </label>
+                        </div>
+
+                    </div> <!-- fim container -->
+                    <br><br>
+                    <fieldset>
+                        <legend>Selecione a opção de borda:</legend>
+                        <label><input type="radio" name="borda" value="Sem borda" checked>Sem borda</label><br>
+                        <label><input type="radio" name="borda" value="Catupiry">Catupiry</label><br>
+                        <label><input type="radio" name="borda" value="Cheddar">Cheddar</label><br>
+                        <label><input type="radio" name="borda" value="Chocolate">Chocolate</label><br>
+                    </fieldset>
+                    <br><br>
+                    <input type="submit" value="Adicionar ao carrinho" name="adicionar">
+                </div>
+
+
+
+            </form>
+        </main>
+
+        <aside>
+            <h3>Promoção da semana</h3>
+        </aside>
+
+        <div id="duvidas">
+            <div id="texto">Dúvidas? Fale com nossos atendentes</div>
         </div>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="quemsomos.html">Quem somos</a></li>
-            <li><a href="precos.html">Preços</a></li>
-            <li><a href="pedido.html">Faça seu pedido</a></li>
-            <li><a href="cliente.html">Área do cliente</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <!-- conteúdo específico -->
-        <h2>Faça seu pedido</h2>
-        <hr>
-        <form>
-
-
-
-
-        </form>
-    </main>
-
-    <aside>
-        <h3>Promoção da semana</h3>
-    </aside>
-
-    <div id="duvidas">
-        <div id="texto">Dúvidas? Fale com nossos atendentes</div>
-    </div>
-
-    <footer>
-        <address>Rua XYZ, 123, Chapecó-SC</address>
-        <p>Peça pelo telefone (49)00000-0000</p>
-        <ul>
-            <li><a href="https://www.facebook.com/pizzabyte/"><img src="assets/images/facebook.png" alt="Facebook"></a>
-            </li>
-            <li><a href="https://www.twitter.com/pizzabyte/"><img src="assets/images/twitter.png" alt="Twitter"></a>
-            </li>
-        </ul>
-    </footer>
+        <footer>
+            <address>Rua XYZ, 123, Chapecó-SC</address>
+            <p>Peça pelo telefone (49)00000-0000</p>
+            <ul>
+                <li><a href="https://www.facebook.com/pizzabyte/"><img src="assets/images/facebook.png"
+                            alt="Facebook"></a>
+                </li>
+                <li><a href="https://www.twitter.com/pizzabyte/"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                </li>
+            </ul>
+        </footer>
     </div>
 </body>
 
